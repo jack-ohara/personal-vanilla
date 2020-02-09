@@ -1,0 +1,62 @@
+:root {
+  --text-primary-colour: #f1edee;
+  --text-secondary-colour: #8aa29e;
+  --background-primary-colour: #3d5467;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--text-primary-colour);
+  text-decoration: underline;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 5px 8px;
+}
+
+nav .blog-link {
+  padding: 3px 6px;
+  font-size: 1.5em;
+}
+
+nav .blog-link a {
+  color: var(--text-secondary-colour);
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  background-color: var(--background-primary-colour);
+  color: var(--text-primary-colour);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.content-wrapper .personal-info {
+  padding-top: 16%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-wrapper .personal-info h1 {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  font-size: 2.4em;
+}
+
+.content-wrapper .personal-info h3 {
+  margin: 0;
+}
+
+.content-wrapper .personal-info img {
+  width: 50%;
+  max-width: 150px;
+  border-radius: 50%;
+}

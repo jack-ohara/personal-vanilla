@@ -31,32 +31,46 @@ nav .blog-link a {
 }
 
 .content-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.landing-section {
   background-color: var(--background-primary-colour);
   color: var(--text-primary-colour);
   min-height: 100vh;
   min-width: 100vw;
 }
 
-.content-wrapper .personal-info {
-  padding-top: 16%;
-  padding-left: 5%;
+.landing-section .personal-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 16%;
 }
 
-.content-wrapper .personal-info h1 {
+.landing-section .personal-info .text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.landing-section .personal-info .text-info h1 {
   margin-top: 0;
   margin-bottom: 0.3em;
   font-size: 2.4em;
 }
 
-.content-wrapper .personal-info h3 {
+.landing-section .personal-info .text-info h3 {
   margin: 0;
 }
 
-.content-wrapper .personal-info img {
-  width: 50%;
-  max-width: 150px;
+.landing-section .personal-info .image-wrapper {
+  max-width: 40%;
+  padding-top: 13%;
+}
+
+.landing-section .personal-info .image-wrapper img {
+  width: 100%;
   border-radius: 50%;
 }

@@ -15,21 +15,31 @@ a {
   text-decoration: underline;
 }
 
-nav {
+header {
   position: fixed;
   top: 0;
   right: 0;
-  margin: 5px 8px;
+  left: 0;
+  min-height: 90px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-nav .blog-link {
-  padding: 3px 6px;
-  font-size: 1.5em;
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
-nav .blog-link a {
-  color: var(--text-secondary-colour);
-  text-decoration: underline;
+header nav ul a {
+  font-family: var(--default-font);
+  color: var(--text-primary-colour);
+  font-size: 3em;
+  margin: auto 0;
+  padding: 15px;
+  text-decoration: none;
 }
 
 .content-wrapper {
@@ -44,7 +54,7 @@ nav .blog-link a {
   min-width: 100vw;
 }
 
-.landing-section .section-wrapper {
+.section-wrapper {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -52,7 +62,7 @@ nav .blog-link a {
   flex-direction: column;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  min-height: 100vh;
+  align-items: center;
 }
 
 .landing-section .personal-info {
@@ -77,6 +87,7 @@ nav .blog-link a {
   justify-content: space-evenly;
   margin: auto 0;
   flex-basis: 0px;
+  -webkit-box-flex: 1;
   flex-grow: 1;
 }
 
@@ -99,6 +110,7 @@ nav .blog-link a {
 .landing-section .personal-info .image-wrapper {
   margin: auto 0 auto 4%;
   flex-basis: 0px;
+  -webkit-box-flex: 1;
   flex-grow: 1;
 }
 
@@ -130,6 +142,7 @@ nav .blog-link a {
   flex-direction: row;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-flex: 1;
   flex-grow: 1;
 }
 
@@ -140,6 +153,7 @@ nav .blog-link a {
   padding: 1em;
   margin: 20px 12px;
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
   display: flex;
 }
 

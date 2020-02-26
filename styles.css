@@ -72,6 +72,10 @@ header nav ul a:hover {
   align-items: center;
 }
 
+.landing-section .section-wrapper {
+  min-height: 100vh;
+}
+
 .landing-section .personal-info {
   display: -webkit-box;
   display: flex;
@@ -141,18 +145,6 @@ header nav ul a:hover {
   padding: 5% 0;
 }
 
-.landing-section .blog-cards .small-cards-wrapper {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-}
-
 .landing-section .blog-cards .blog-card {
   background-color: var(--text-primary-colour);
   color: var(--text-secondary-colour);
@@ -162,6 +154,7 @@ header nav ul a:hover {
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
   display: -webkit-box;
   display: flex;
+  flex: 1 0 0px;
 }
 
 .landing-section .blog-cards .blog-card a {
@@ -204,10 +197,4 @@ header nav ul a:hover {
   grid-column-start: 2;
   align-self: end;
   justify-self: end;
-}
-
-.landing-section .blog-cards .small-cards-wrapper .small-card {
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
 }

@@ -3,6 +3,7 @@
   --text-secondary-colour: #b2dbbf;
   --background-primary-colour: #4d5d64;
   --blog-text-primary-color: #424242;
+  --main-green: #799868;
   --default-font: "Source Sans Pro", sans-serif;
 }
 
@@ -41,6 +42,11 @@ header nav ul a {
   margin: auto 0;
   padding: 15px;
   text-decoration: none;
+  transition: all 0.1s linear 0s;
+}
+
+header nav ul a:hover {
+  border-bottom: 7px solid var(--main-green);
 }
 
 .content-wrapper {

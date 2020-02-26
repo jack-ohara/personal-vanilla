@@ -1,7 +1,7 @@
 :root {
   --text-primary-colour: #f1edee;
   --text-secondary-colour: #b2dbbf;
-  --background-primary-colour: #247ba0;
+  --background-primary-colour: #4d5d64;
   --blog-text-primary-color: #424242;
   --default-font: "Source Sans Pro", sans-serif;
 }
@@ -37,6 +37,7 @@ header nav ul a {
   font-family: var(--default-font);
   color: var(--text-primary-colour);
   font-size: 3em;
+  font-weight: 600;
   margin: auto 0;
   padding: 15px;
   text-decoration: none;

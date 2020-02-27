@@ -1,5 +1,4 @@
 <svg width="55" height="55" xmlns="http://www.w3.org/2000/svg">
- <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
  <g>
   <title>background</title>
   <rect fill="#fff" id="canvas_background" height="57" width="57" y="-1" x="-1"/>
@@ -10,6 +9,6 @@
  <g>
   <title>Layer 1</title>
   <rect id="svg_1" height="57" width="57" fill="#799868"/>
-  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="30" id="svg_2" y="38.5" x="20.5" stroke-width="2" stroke="#2f2e2e" fill="#2f2e2e">J</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Source Sans Pro, Helvetica, sans-serif" font-size="30" id="svg_2" y="38.5" x="20.5" stroke-width="2" stroke="#1a1919" fill="#1a1919">J</text>
  </g>
 </svg>

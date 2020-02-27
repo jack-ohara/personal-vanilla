@@ -2,7 +2,7 @@
   --text-primary-colour: #f1edee;
   --text-secondary-colour: #b2dbbf;
   --background-primary-colour: #4d5d64;
-  --blog-text-primary-color: #424242;
+  --blog-text-primary-color: #1a1919;
   --main-green: #799868;
   --default-font: "Source Sans Pro", sans-serif;
 }
@@ -22,15 +22,22 @@ header {
   right: 0;
   left: 0;
   min-height: 90px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
 header nav ul {
   list-style: none;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
 }
 
@@ -42,6 +49,7 @@ header nav ul a {
   margin: auto 0;
   padding: 15px;
   text-decoration: none;
+  -webkit-transition: all 0.1s linear 0s;
   transition: all 0.1s linear 0s;
 }
 
@@ -69,7 +77,12 @@ header nav ul a:hover {
   flex-direction: column;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
+}
+
+.landing-section .section-wrapper {
+  min-height: 100vh;
 }
 
 .landing-section .personal-info {
@@ -141,27 +154,33 @@ header nav ul a:hover {
   padding: 5% 0;
 }
 
-.landing-section .blog-cards .small-cards-wrapper {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-}
-
 .landing-section .blog-cards .blog-card {
   background-color: var(--text-primary-colour);
+  background-image: url(resources/images/Subtle-Prism.svg);
   color: var(--text-secondary-colour);
   border-radius: 10px;
   padding: 1em;
-  margin: 20px 12px;
+  margin: 20px 0;
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
   display: -webkit-box;
   display: flex;
+  -webkit-box-flex: 1;
+  flex: 1 0 0px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.landing-section .blog-cards .blog-card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.landing-section .blog-cards .blog-card:first-of-type {
+  margin-top: 0px;
+}
+
+.landing-section .blog-cards .blog-card:last-of-type {
+  margin-bottom: 0px;
 }
 
 .landing-section .blog-cards .blog-card a {
@@ -204,10 +223,4 @@ header nav ul a:hover {
   grid-column-start: 2;
   align-self: end;
   justify-self: end;
-}
-
-.landing-section .blog-cards .small-cards-wrapper .small-card {
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
 }

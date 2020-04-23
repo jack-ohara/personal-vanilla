@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Jack O'Hara</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="resources/images/J-logo.svg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <a href="/">
-        <img src="resources/images/J-logo.svg" style="height: 100%;" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="https://blog.jackohara.io">Blog</a></li>
-          <li><a href="#contact-section">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="landing-section">
-        <div class="content-wrapper">
-          <div class="section-wrapper">
-            <div class="personal-info">
-              <div class="text-info">
-                <h1>Jack O'Hara</h1>
-                <h2>Full-Stack Developer Based in Manchester</h2>
-              </div>
-              <div class="image-wrapper">
-                <!--
-                Possibly convert this to using a cloudinary source rather than a local image
-              -->
-                <img
-                  alt="Headshot of Jack O'Hara"
-                  src="https://res.cloudinary.com/jackohara/image/upload/c_fit,h_492,q_auto:good,w_492/v1582524908/PersonalSite/hands-in-pockets_iml89c.jpg"
-                />
-              </div>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Jack O'Hara</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="resources/images/J-logo.svg" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <a href="/">
+      <img src="resources/images/J-logo.svg" style="height: 100%;" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="https://blog.jackohara.io">Blog</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="landing-section">
+      <div class="content-wrapper">
+        <div class="section-wrapper">
+          <section class="personal-info">
+            <hgroup class="text-info">
+              <h1>Jack O'Hara</h1>
+              <h3>Full-Stack Developer Based in Manchester</h3>
+            </hgroup>
+            <figure class="image-wrapper">
+              <img alt="Headshot of Jack O'Hara"
+                src="https://res.cloudinary.com/jackohara/image/upload/c_fit,h_492,q_auto:good,w_492/v1582524908/PersonalSite/hands-in-pockets_iml89c.jpg" />
+            </figure>
+          </section>
+          <section class="blog-cards-container">
+            <h2><a href="https://blog.jackohara.io">Check Out My Blog!</a></h2>
             <div class="blog-cards">
-              <article class="blog-card">
+              <!-- <article class="blog-card">
                 <a href="https://blog.jackohara.io/blog1">
                   <div class="card-grid-container">
                     <h4 class="blog-title">
@@ -73,11 +68,13 @@
                     <p>11/02/2020</p>
                   </div>
                 </a>
-              </article>
+              </article> -->
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>

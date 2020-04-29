@@ -209,7 +209,7 @@ header nav ul a:hover {
   grid-template-rows: auto auto;
   grid-template-columns: auto 1fr auto;
   -webkit-box-flex: 4;
-  flex: 4 0 0px;
+  flex: 3 0 0px;
   border-radius: 10px 10px 0 0;
   padding: 1.2em;
 }
@@ -249,7 +249,7 @@ header nav ul a:hover {
 
 .landing-section .blog-cards .blog-card .blog-intro {
   -webkit-box-flex: 2;
-  flex: 2 0 0px;
+  flex: 1 0 0px;
   color: var(--blog-text-primary-color);
   font-size: 2.6em;
   border-radius: 0 0 10px 10px;

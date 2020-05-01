@@ -167,6 +167,7 @@ header nav ul a:hover {
   overflow: scroll visible;
   width: 100%;
   flex-grow: 1;
+  display: flex;
 }
 
 .landing-section .blog-cards-section .blog-cards-container .blog-cards {
@@ -248,6 +249,7 @@ header nav ul a:hover {
 }
 
 .landing-section .blog-cards .blog-card .blog-intro {
+  font-family: var(--default-font);
   -webkit-box-flex: 2;
   flex: 1 0 0px;
   color: var(--blog-text-primary-color);

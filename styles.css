@@ -9,11 +9,33 @@
 
 body {
   margin: 0;
+  background-color: var(--background-primary-colour);
+  color: var(--text-primary-colour);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
-a {
+a,
+a > h3 {
   color: var(--text-primary-colour);
   text-decoration: underline;
+}
+
+h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 5em;
+  font-family: var(--default-font);
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.9em;
+  font-family: var(--default-font);
+  font-weight: 400;
 }
 
 header {
@@ -58,11 +80,10 @@ header nav ul a:hover {
   margin: 0 auto;
 }
 
-body {
-  background-color: var(--background-primary-colour);
-  color: var(--text-primary-colour);
-  min-height: 100vh;
-  min-width: 100vw;
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .section-wrapper {
@@ -75,10 +96,12 @@ body {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
+  padding-bottom: 2em;
 }
 
-.landing-section .section-wrapper {
-  min-height: 95vh;
+.landing-section {
+  margin-top: 3em;
+  flex-grow: 1;
 }
 
 .landing-section .personal-info {
@@ -115,13 +138,6 @@ body {
   line-height: 1em;
 }
 
-.landing-section .personal-info .text-info h3 {
-  margin: 0;
-  font-size: 2.9em;
-  font-family: var(--default-font);
-  font-weight: 400;
-}
-
 .landing-section .personal-info .image-wrapper {
   margin: auto 0 auto 4%;
   flex-basis: 0px;
@@ -137,7 +153,6 @@ body {
 
 .landing-section .blog-cards-section {
   overflow: scroll visible;
-  padding: 1.5% 0 5% 0;
   -webkit-box-flex: 1;
   flex-grow: 2;
   display: -webkit-box;
@@ -148,14 +163,6 @@ body {
   -webkit-box-pack: justify;
   justify-content: space-between;
   max-width: 100%;
-}
-
-.landing-section .blog-cards-section h2 {
-  margin: 0 0 0.5em 0;
-  font-size: 5em;
-  font-family: var(--default-font);
-  font-weight: 600;
-  text-align: center;
 }
 
 .landing-section .blog-cards-section .blog-cards-container {
@@ -251,4 +258,20 @@ body {
   font-size: 2.6em;
   border-radius: 0 0 10px 10px;
   padding: 0.5em;
+}
+
+#contact-section h2 {
+  margin-bottom: 0.3em;
+}
+
+#contact-section .social-media {
+  padding-bottom: 1em;
+}
+
+#contact-section .social-media > * {
+  padding: 0 1em;
+}
+
+#contact-section .social-media .linkedin-logo {
+  fill: #f1edee;
 }

@@ -17,10 +17,6 @@ a {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   min-height: 90px;
   display: -webkit-box;
   display: flex;
@@ -44,7 +40,7 @@ header nav ul {
 header nav ul a {
   font-family: var(--default-font);
   color: var(--text-primary-colour);
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 600;
   margin: auto 0;
   padding: 15px;
@@ -62,7 +58,7 @@ header nav ul a:hover {
   margin: 0 auto;
 }
 
-.landing-section {
+body {
   background-color: var(--background-primary-colour);
   color: var(--text-primary-colour);
   min-height: 100vh;
@@ -82,7 +78,7 @@ header nav ul a:hover {
 }
 
 .landing-section .section-wrapper {
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .landing-section .personal-info {
@@ -93,8 +89,7 @@ header nav ul a:hover {
   flex-direction: row;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin-top: 8%;
-  min-height: 33vh;
+  flex-grow: 1;
 }
 
 .landing-section .personal-info .text-info {
@@ -144,7 +139,7 @@ header nav ul a:hover {
   overflow: scroll visible;
   padding: 1.5% 0 5% 0;
   -webkit-box-flex: 1;
-  flex-grow: 1;
+  flex-grow: 2;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;

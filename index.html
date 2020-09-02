@@ -1,118 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jack O'Hara</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="resources/images/J-logo.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Jack O'Hara</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="shortcut icon" href="resources/images/J-logo.svg" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <a href="/">
-      <svg width="92" height="92" xmlns="http://www.w3.org/2000/svg" style="height: 100%;">
-        <g>
-          <title>background</title>
-          <rect fill="#fff" id="canvas_background" height="100%" width="100%" y="-1" x="-1" />
-          <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-            <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" />
-          </g>
-        </g>
-        <g>
-          <title>Layer 1</title>
-          <rect id="svg_1" height="100%" width="100%" fill="#799868" />
-          <text xml:space="preserve" text-anchor="start" font-family="Source Sans Pro, Helvetica, sans-serif"
-            font-size="60" id="svg_2" y="70%" x="35%" stroke-width="2" stroke="#1a1919" fill="#1a1919">J</text>
-        </g>
-      </svg>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="https://blog.jackohara.io">Blog</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="landing-section">
-      <div class="content-wrapper">
-        <div class="section-wrapper">
-          <section class="personal-info">
-            <hgroup class="text-info">
-              <h1>Jack O'Hara</h1>
-              <h3>Full-Stack Developer Based in Manchester</h3>
-            </hgroup>
-            <figure class="image-wrapper">
-              <img alt="Headshot of Jack O'Hara"
-                src="https://res.cloudinary.com/jackohara/image/upload/c_fit,h_492,q_auto:good,w_492/v1582524908/PersonalSite/hands-in-pockets_iml89c.jpg" />
-            </figure>
-          </section>
-          <section class="blog-cards-section">
-            <h2><a href="https://blog.jackohara.io">Check Out My Blog!</a></h2>
-            <section class="blog-cards-container">
-              <div class="blog-cards">
-                <article class="blog-card">
-                  <a href="https://blog.jackohara.io/blog1">
-                    <div class="card-wrapper">
-                      <div class="card-header">
-                        <h4 class="blog-title">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Nulla dolorem similique quis, numquam in temporibus!
-                        </h4>
-                        <p class="blog-author">Jack O'Hara</p>
-                        <p class="blog-date">17/02/2020</p>
-                      </div>
-                      <div class="blog-intro">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui saepe facere voluptate
-                        repellat maiores, obcaecati nemo veniam quaerat ad...
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article class="blog-card">
-                  <a href="https://blog.jackohara.io/blog2">
-                    <div class="card-wrapper">
-                      <div class="card-header">
-                        <h4 class="blog-title">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Nulla dolorem similique quis
-                        </h4>
-                        <p class="blog-author">Jack O'Hara</p>
-                        <p class="blog-date">17/02/2020</p>
-                      </div>
-                      <div class="blog-intro">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed illum debitis, tempora illo iure
-                        culpa laborum earum quidem praesentium quos libero! Quod...
-                      </div>
-                    </div>
-                  </a>
-                </article>
+  <body>
+    <header>
+      <a href="/">
+        <img src="resources/images/J-logo.svg" alt="Letter 'J' logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#blog-section">Blog</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="landing-section">
+        <div class="content-wrapper">
+          <div class="section-wrapper">
+            <section class="personal-info">
+              <hgroup class="text-info">
+                <h1>Jack O'Hara</h1>
+                <h3>Full-Stack Developer Based in Manchester</h3>
+              </hgroup>
+              <figure class="image-wrapper">
+                <img
+                  alt="Headshot of Jack O'Hara"
+                  src="https://res.cloudinary.com/jackohara/image/upload/c_fit,h_492,q_auto:good,w_492/v1582524908/PersonalSite/hands-in-pockets_iml89c.jpg"
+                />
+              </figure>
             </section>
+            <section class="blog-cards-section">
+              <h2 id="blog-section">
+                <a href="https://blog.jackohara.io">Check Out My Blog!</a>
+              </h2>
+              <section class="blog-cards-container">
+                <article class="blog-card">
+                  <a href="/blog1/blog2" class="blog-title">
+                    <h4>What is JWT?</h4>
+                  </a>
+                  <div class="blog-metadata">
+                    <span class="blog-author">Jack O'Hara</span>
+                    <span class="blog-date">02/09/2020</span>
+                  </div>
+                </article>
+              </section>
+            </section>
+          </div>
         </div>
-        </section>
       </div>
-    </div>
-    <section id="contact-section">
-      <div class="section-wrapper">
-        <h2>Get In Touch!</h2>
-        <div class="social-media">
-          <a href="https://github.com/jack-ohara">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="6em" width="6em" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/jack0hara">
-            <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      <section id="contact-section">
+        <div class="section-wrapper">
+          <h2>Get In Touch!</h2>
+          <div class="social-media">
+            <a href="https://github.com/jack-ohara" target="_blank">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="6em"
+                width="6em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jack0hara" target="_blank">
+              <svg
+                class="linkedin-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6em"
+                height="6em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+          </div>
+          <a href="mailto:jack@jackohara.io">
+            <h3>jack@jackohara.io</h3>
           </a>
         </div>
-        <a href="mailto:jack@jackohara.io">
-          <h3>jack@jackohara.io</h3>
-        </a>
-      </div>
-    </section>
-    </div>
-  </main>
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>

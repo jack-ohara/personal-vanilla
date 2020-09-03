@@ -13,7 +13,6 @@ body {
   color: var(--text-primary-colour);
   font-family: var(--default-font);
   min-height: 100vh;
-  min-width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -97,4 +96,23 @@ footer {
   padding: 1em;
   text-align: center;
   font-size: 2.5em;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  h1,
+  h2 {
+    text-align: left;
+  }
+
+  header {
+    padding-right: 2em;
+  }
+}
+
+@media only screen and (min-device-width: 1500px) {
+  main {
+    max-width: 1500px;
+    min-width: 0;
+    margin: 0 auto;
+  }
 }

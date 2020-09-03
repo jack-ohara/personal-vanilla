@@ -1,0 +1,19 @@
+main p,
+main p *,
+main li,
+main pre {
+  font-size: 2em;
+}
+
+code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: scroll;
+  padding: 1em 0.2em;
+  font-family: "Courier New", Courier, monospace;
+  background: #6e6f73;
+}
+
+.img-wrapper {
+  text-align: center;
+}

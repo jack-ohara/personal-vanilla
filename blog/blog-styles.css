@@ -3,6 +3,7 @@ main p *,
 main li,
 main pre {
   font-size: 2em;
+  text-align: justify;
 }
 
 code {
@@ -12,6 +13,7 @@ code {
   padding: 1em 0.2em;
   font-family: "Courier New", Courier, monospace;
   background: #6e6f73;
+  border-radius: 3px;
 }
 
 .img-wrapper {

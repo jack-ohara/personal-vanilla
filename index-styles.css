@@ -67,8 +67,9 @@ main {
   color: var(--text-secondary-colour);
 }
 
-.landing-section .blog-cards-container .blog-card .blog-title {
-  font-size: 3em;
+.landing-section .blog-cards-container .blog-card .blog-title,
+.landing-section .blog-cards-container .blog-card .blog-title > * {
+  font-size: 2em;
   text-decoration: none;
   color: var(--text-secondary-colour);
 }

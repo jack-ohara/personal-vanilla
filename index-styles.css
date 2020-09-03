@@ -3,11 +3,6 @@ a > h3 {
   text-decoration: underline;
 }
 
-.content-wrapper {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -19,7 +14,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 0;
 }
 
 .section-wrapper > section {
@@ -36,7 +30,6 @@ main {
   flex-direction: row;
   justify-content: space-between;
   flex-grow: 1;
-  margin: 3em 0;
 }
 
 .landing-section .personal-info .text-info {
@@ -46,6 +39,10 @@ main {
   margin: auto 0;
   flex-basis: 0px;
   flex-grow: 1;
+}
+
+.landing-section .personal-info .text-info h1 {
+  text-align: left;
 }
 
 .landing-section .personal-info .image-wrapper {

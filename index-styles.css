@@ -1,70 +1,6 @@
-:root {
-  --text-primary-colour: #f1edee;
-  --text-secondary-colour: #b2dbbf;
-  --background-primary-colour: #4d5d64;
-  --blog-text-primary-color: #1a1919;
-  --main-green: #799868;
-  --default-font: "Source Sans Pro", sans-serif;
-}
-
-body {
-  margin: 0;
-  background-color: var(--background-primary-colour);
-  color: var(--text-primary-colour);
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-
-a,
 a > h3 {
   color: var(--text-primary-colour);
   text-decoration: underline;
-}
-
-h2 {
-  margin: 0 0 0.5em 0;
-  font-size: 5em;
-  font-family: var(--default-font);
-  font-weight: 600;
-  text-align: center;
-}
-
-h3 {
-  margin: 0;
-  font-size: 2.9em;
-  font-family: var(--default-font);
-  font-weight: 400;
-}
-
-header {
-  min-height: 90px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-header nav ul a {
-  font-family: var(--default-font);
-  color: var(--text-primary-colour);
-  font-size: 3.5em;
-  font-weight: 600;
-  margin: auto 0;
-  padding: 15px;
-  text-decoration: none;
-  transition: all 0.1s linear 0s;
-}
-
-header nav ul a:hover {
-  border-bottom: 7px solid var(--main-green);
 }
 
 .content-wrapper {
@@ -112,15 +48,6 @@ main {
   flex-grow: 1;
 }
 
-.landing-section .personal-info .text-info h1 {
-  margin-top: 0;
-  margin-bottom: 0.3em;
-  font-size: 9em;
-  font-family: var(--default-font);
-  font-weight: 600;
-  line-height: 1em;
-}
-
 .landing-section .personal-info .image-wrapper {
   margin: auto 0 auto 4%;
   flex-basis: 0px;
@@ -144,7 +71,6 @@ main {
 }
 
 .landing-section .blog-cards-container .blog-card .blog-title {
-  font-family: var(--default-font);
   font-size: 3em;
   text-decoration: none;
   color: var(--text-secondary-colour);
@@ -154,10 +80,6 @@ main {
 .landing-section .blog-cards-container .blog-card .blog-title:focus,
 .landing-section .blog-cards-container .blog-card .blog-title:active {
   text-decoration: underline;
-}
-
-.landing-section .blog-cards-container .blog-card .blog-title h4 {
-  margin: 0;
 }
 
 .landing-section .blog-cards-container .blog-card .blog-metadata {
@@ -170,7 +92,6 @@ main {
 
 .landing-section .blog-cards-container .blog-card .blog-metadata > * {
   margin: 0;
-  font-family: var(--default-font);
   font-size: 1.5em;
 }
 

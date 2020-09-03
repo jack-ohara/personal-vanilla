@@ -90,3 +90,11 @@ header nav ul a:hover {
   max-width: 90%;
   margin: 4em auto;
 }
+
+footer {
+  background: var(--main-green);
+  color: var(--blog-text-primary-color);
+  padding: 1em;
+  text-align: center;
+  font-size: 2.5em;
+}
